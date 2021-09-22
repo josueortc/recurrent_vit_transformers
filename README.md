@@ -1,4 +1,4 @@
-# vision-transformers-cifar10
+# recurrent_vision_transformer
 Let's train vision transformers for cifar 10! 
 
 This is an unofficial and elementary implementation of `An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale`.
@@ -6,11 +6,11 @@ This is an unofficial and elementary implementation of `An Image is Worth 16x16 
 I use pytorch for implementation.
 
 # Usage
-`python train_cifar10.py` # vit-patchsize-4
+`python train_cifar10.py --net vit` # Normal Vision Transformer
 
-`python train_cifar10.py --patch 2` # vit-patchsize-2
+`python train_cifar10.py --net recurrentvit` # Standard Recurrent Unrolling
 
-`python train_cifar10.py --net res18` # resnet18
+`python train_cifar10.py --net recurrentbiovit` # Biological Unrolling 
 
 # Results..
 
